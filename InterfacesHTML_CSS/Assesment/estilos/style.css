@@ -1,0 +1,402 @@
+ @charset "UTF-8";
+ @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+}
+body{
+    background-color: rgb(235, 255, 255);
+}
+a {
+color: #fff;
+text-decoration: none;
+transition: 0.3s;
+}
+
+a:hover {
+opacity: 0.7;
+}
+
+.logo {
+font-size: 24px;
+text-transform: uppercase;
+letter-spacing: 4px;
+}
+
+nav {
+display: flex;
+justify-content: space-around;
+align-items: center;
+font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+background: #23232e;
+height: 8vh;
+box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.966);
+}
+main{
+    margin: auto;
+    max-width: 1000px;
+    min-width: 420px;
+}
+header#ass{
+    background-color: #23232e;
+    background-size: cover;
+    height: 92vh;
+}
+header{
+background: url("bg.jpg") no-repeat center center;
+background-size: cover;
+height: 92vh;
+}
+article#deputados{
+    margin: auto;
+    max-width: 1000px;
+    padding-bottom: 100px;
+}
+article#partidosart{
+    margin: auto;
+    max-width: 1000px;
+    padding-bottom: 200px;
+}
+article#bancadasart{
+    margin: auto;
+    max-width: 1000px;
+    padding-bottom: 200px;
+}
+article#noticiasart{
+    margin: auto;
+    max-width: 1000px;
+    padding-bottom: 200px;
+}
+article#plenario{
+    margin: auto;
+    max-width: 1000px;
+    padding-bottom: 200px;
+    display: block;
+    text-align: center;
+}
+article#contato{
+    margin: auto;
+    max-width: 1000px;
+    padding-bottom: 200px;
+}
+
+.nav-list {
+list-style: none;
+display: flex;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
+}
+
+.nav-list li {
+letter-spacing: 3px;
+margin-left: 32px;
+text-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.349);
+}
+.nav-list li:hover{
+    font-size: 1.3em;
+
+}
+
+.mobile-menu {
+display: none;
+cursor: pointer;
+}
+
+.mobile-menu div {
+width: 32px;
+height: 2px;
+background: #fff;
+margin: 8px;
+transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    }
+
+.nav-list.active {
+transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+from {
+    opacity: 0;
+    transform: translateX(50px);
+}
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+
+.mobile-menu.active .line1 {
+transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+transform: rotate(45deg) translate(-5px, -7px);
+}
+
+div#introd{    
+    display: inline-block;
+    width: 100%;
+    height: 600px;
+    background-image: url('../imagens/plenario-camara.png'); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    
+}
+div#introtxt{
+    background: rgba(0, 0, 0, 0.808);
+    color: white; 
+    text-align: center;
+    background-position: center center;
+    margin: auto;
+    max-width: 500px;
+    padding: 1em;
+    border-radius: 10px;
+}
+h1#introh1{
+    font-size: 2em;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+h3#introh1{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div#botintro{
+    background: #23232e;
+    font-size: 1em;
+    margin: auto;
+    color: #fff;
+    padding: 1em;
+    max-width: 90px;
+    border-radius: 0.5em;
+    box-shadow: 4px 4px 9px black;
+}
+main{
+    text-align: center;
+}
+.titulo{
+    font-size: 1.5em;
+    color: rgb(40, 12, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.274);
+    
+}
+.subtitle{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+input{
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.705);
+    border-radius: 3px;
+    width: 300px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.buscar{
+    text-align: center;
+    width: 300px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #23232e;
+    color: white;
+    border: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+    margin-bottom: 40px;
+}
+.buscar:hover{
+    background-color: black;
+    cursor: pointer;
+}
+table#dep{
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 10px;   
+    padding-bottom: 50px;
+} 
+.dep {
+    background-color: white;
+    text-align: center;
+    width: 150px;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.37);   
+}
+.tabledep{
+    font-size: 1.3em;
+    padding: 10px;
+}
+.uldep > li{
+    list-style-type: disc;
+    font-size: 20px;
+    list-style-position: inside;
+    width: 240px;
+    padding-bottom: 20px;
+}
+table#partidostb{
+    margin: auto;
+    font-size: 1.3em;
+    padding-bottom: 90px;
+    box-shadow:  2px 2px 8px rgba(0, 0, 0, 0.151);
+
+}
+.part{
+    margin: 20px;
+}
+
+table#bancadastb{
+    margin: auto;
+    width: 1000px;
+    height: 500px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.24);
+    background-color: white;
+    
+}
+.tab{
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    font-size: 1.4em;
+    border-collapse: separate;
+}
+th{
+    background-color: #23232e;
+    color: white;
+    font-size: 1.4em;
+}
+a#a1{
+    color: black;
+    font-size: 1.3em;
+    text-decoration:underline;
+   
+}
+a#a1:hover{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+
+}
+p#ap1{
+    margin: 20px;
+}
+img#combustiveltb{
+    width: 500px;
+}
+td#td1{
+    vertical-align: bottom;
+}
+td#td2{
+    display: inline-block;
+}
+table#noticiastb > td{
+
+    width: 1000px;
+}
+h1#noticia{
+    font-size: 1.8em;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+p#combustivel{
+    font-size: 1.4em;
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 10PX;
+    
+}
+p#botao:hover{
+    background-color: black;  
+    cursor: pointer;
+    
+}
+p#botao{
+    margin-top: 90px;
+    background-color: #23232e;
+    padding: 10px;
+    width: 480px;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+.contato{
+    width: 500px;
+    padding-bottom: 8px;
+}
+input#mensagem{
+    width: 500px;
+    padding-bottom: 200px;
+}
+p#botao1{
+
+    background-color: #23232e;
+    padding: 10px;
+    width: 480px;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+table#formtb{
+    border-collapse: separate;
+    border-spacing: 30px;   
+    padding-bottom: 50px;
+}
+.form{
+    font-size: 1.6em;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+p#formp{
+    text-align: justify;
+    font-size: 1.3em;
+    margin-bottom: 50px;
+}
+ul#formul{
+    list-style-type: disc;
+    font-size: 1.5em;
+    list-style-position: inside;
+    width: 500px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #23232e;
+    color: white;
+    display: flex;
+
+}
+footer>p{
+    margin: auto;
+    text-align: center;
+}

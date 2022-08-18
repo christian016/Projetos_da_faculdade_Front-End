@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="app/app.css" />
+</head>
+<body>
+<div id="q1">
+  <p>Questão 1</p>
+  <p>
+    <label for="min">Valor mínimo:</label><br>
+    <input type="number" id="txtmin" name="min" required>
+    
+  </p>
+  <p>
+    <label for="max">Valor máximo:</label><br>
+    <input type="number" id="txtmax" name="max" required><br>
+  </p>
+  <p><button name="calcular" type="button" onclick="calcularmm()">Calcular</button></p>
+  <p id="resq1"></p>
+</div>
+<div id="q2">
+  <p>Questão 2</p>
+  <p>
+    <label for="cfatorial">Calcular fatorial de: </label><br>
+    <input type="number" name="fat" id="vfat">
+  </p>
+  <button name="calcular" type="button" onclick="calcularfat()">Calcular</button>
+  <p id="resq2">
+  </p>
+</div>
+<div id="q3">
+  <p>Questão 3 RELATÓRIO</p>
+  <p>
+    <button name="relatorio" type="button" value="Criar Relatorio" onclick="relatorio()">Criar relatório</button>
+  </p>
+  <p id="resq3"></p>
+</div>
+<div id="q4">
+  <p>Questão 4</p>
+  <label>Quantidade de números:</label>
+  <input name="qtddnumeros" id='qtd' type='number'><br>
+  <label>Valor mínimo:</label>
+  <input name="valormin" id='min' type='number'><br>
+  <label>Valor máximo:</label>
+  <input name="valormax" id='max' type='number'><br>
+  <button type='button' value='Calcular' onclick='calcular()'>Calcular</button>
+  <p id="resq4"></p>
+</div>
+<div id="q5">
+  <p>Questão 5</p>
+  <p>Digite o valor dos lados do triangulo</p>
+  <p>
+    <label>Digite o valor do lado 1</label> 
+    <input id='lado1' type='text'></br>
+    <label>Digite o valor do lado 2</label> 
+    <input id='lado2' type='text'></br>
+    <label>Digite o valor do lado 3</label>  
+    <input id='lado3' type='text'></br>
+    <input type='button' value='Calcular' onClick='verificaTriangulo()'>
+  </p>
+  <p id="resq5"></p>
+</div>
+<div id="q6">  
+  <p>Questão 6</p>
+  <div id="nao_logado">
+  <label>login:</label>	 
+  <input id="username" type="text">
+  <input id="password" type="password"> 
+  <button onclick="logar()">Login</button>
+  <br/><br/>
+  <label>Cadastrar novo usuário:</label>
+  <input id="new_user" type="text"> 
+  <input id="new_password" type="password">
+  <button onclick="criarUsuarioNovo()">Cadastrar</button>	
+  </div> 
+  <div id="messages"></div>	
+  <div id="logado" style="visibility:hidden"> 
+  <div>Logado</div>
+  <button onclick="deslogar()">Deslogar</button>
+</div>
+<script src="q1.js"></script>
+<script src="q2.js"></script>
+<script src="q3.js"></script>
+<script src="q4.js"></script>
+<script src="q5.js"></script>
+<script src="q6.js"></script>
+</body>
+</html>
